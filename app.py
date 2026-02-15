@@ -124,7 +124,8 @@ if uploaded is not None:
     st.dataframe(pred_df.head(50), use_container_width=True)
 
     # Probabilities (optional)
-    if hasattr(pipe.named_steps["clf"], "predict_proba"):
+    clf = pipe.named_steps.get("clf")
+    if clf and hasattr(clf, "predict_proba"):
         proba = pipe.predict_proba(X_up)
         proba_df = pred_df.copy()
         if summary["task_type"] == "binary":
