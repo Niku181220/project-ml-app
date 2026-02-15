@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-02-05T12:10:41",
+  "dataset_path": "data/dataset.csv",
+  "target_column": "diagnosis",
+  "task_type": "binary",
+  "labels": [
+    0,
+    1
+  ],
+  "label_map": {
+    "0": "M",
+    "1": "B"
+  },
+  "models": [
+    {
+      "name": "Logistic Regression",
+      "file": "model/artifacts/Logistic_Regression.joblib"
+    },
+    {
+      "name": "Decision Tree",
+      "file": "model/artifacts/Decision_Tree.joblib"
+    },
+    {
+      "name": "kNN",
+      "file": "model/artifacts/kNN.joblib"
+    },
+    {
+      "name": "Naive Bayes",
+      "file": "model/artifacts/Naive_Bayes.joblib"
+    },
+    {
+      "name": "Random Forest (Ensemble)",
+      "file": "model/artifacts/Random_Forest_Ensemble.joblib"
+    },
+    {
+      "name": "XGBoost (Ensemble)",
+      "file": "model/artifacts/XGBoost_Ensemble.joblib"
+    }
+  ],
+  "table": [
+    {
+      "ML Model Name": "Logistic Regression",
+      "Accuracy": 0.9825,
+      "AUC": 0.9954,
+      "Precision": 0.9861,
+      "Recall": 0.9861,
+      "F1": 0.9861,
+      "MCC": 0.9623
+    },
+    {
+      "ML Model Name": "Decision Tree",
+      "Accuracy": 0.8947,
+      "AUC": 0.9018,
+      "Precision": 0.9545,
+      "Recall": 0.875,
+      "F1": 0.913,
+      "MCC": 0.7851
+    },
+    {
+      "ML Model Name": "kNN",
+      "Accuracy": 0.9737,
+      "AUC": 0.9874,
+      "Precision": 0.96,
+      "Recall": 1.0,
+      "F1": 0.9796,
+      "MCC": 0.9442
+    },
+    {
+      "ML Model Name": "Naive Bayes",
+      "Accuracy": 0.9298,
+      "AUC": 0.9841,
+      "Precision": 0.9444,
+      "Recall": 0.9444,
+      "F1": 0.9444,
+      "MCC": 0.8492
+    },
+    {
+      "ML Model Name": "Random Forest (Ensemble)",
+      "Accuracy": 0.9561,
+      "AUC": 0.9924,
+      "Precision": 0.9589,
+      "Recall": 0.9722,
+      "F1": 0.9655,
+      "MCC": 0.9054
+    },
+    {
+      "ML Model Name": "XGBoost (Ensemble)",
+      "Accuracy": 0.9649,
+      "AUC": 0.996,
+      "Precision": 0.9474,
+      "Recall": 1.0,
+      "F1": 0.973,
+      "MCC": 0.9258
+    }
+  ],
+  "details": {
+    "Logistic Regression": {
+      "Accuracy": 0.9824561403508771,
+      "AUC": 0.9953703703703703,
+      "Precision": 0.9861111111111112,
+      "Recall": 0.9861111111111112,
+      "F1": 0.9861111111111112,
+      "MCC": 0.9623015873015873,
+      "ConfusionMatrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       0.98      0.98      0.98        42\n           1       0.99      0.99      0.99        72\n\n    accuracy                           0.98       114\n   macro avg       0.98      0.98      0.98       114\nweighted avg       0.98      0.98      0.98       114\n"
+    },
+    "Decision Tree": {
+      "Accuracy": 0.8947368421052632,
+      "AUC": 0.9017857142857143,
+      "Precision": 0.9545454545454546,
+      "Recall": 0.875,
+      "F1": 0.9130434782608695,
+      "MCC": 0.7850960525237097,
+      "ConfusionMatrix": [
+        [
+          39,
+          3
+        ],
+        [
+          9,
+          63
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       0.81      0.93      0.87        42\n           1       0.95      0.88      0.91        72\n\n    accuracy                           0.89       114\n   macro avg       0.88      0.90      0.89       114\nweighted avg       0.90      0.89      0.90       114\n"
+    },
+    "kNN": {
+      "Accuracy": 0.9736842105263158,
+      "AUC": 0.9874338624338624,
+      "Precision": 0.96,
+      "Recall": 1.0,
+      "F1": 0.9795918367346939,
+      "MCC": 0.9441549509633318,
+      "ConfusionMatrix": [
+        [
+          39,
+          3
+        ],
+        [
+          0,
+          72
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       1.00      0.93      0.96        42\n           1       0.96      1.00      0.98        72\n\n    accuracy                           0.97       114\n   macro avg       0.98      0.96      0.97       114\nweighted avg       0.97      0.97      0.97       114\n"
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.9298245614035088,
+      "AUC": 0.9841269841269842,
+      "Precision": 0.9444444444444444,
+      "Recall": 0.9444444444444444,
+      "F1": 0.9444444444444444,
+      "MCC": 0.8492063492063492,
+      "ConfusionMatrix": [
+        [
+          38,
+          4
+        ],
+        [
+          4,
+          68
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       0.90      0.90      0.90        42\n           1       0.94      0.94      0.94        72\n\n    accuracy                           0.93       114\n   macro avg       0.92      0.92      0.92       114\nweighted avg       0.93      0.93      0.93       114\n"
+    },
+    "Random Forest (Ensemble)": {
+      "Accuracy": 0.956140350877193,
+      "AUC": 0.9923941798941799,
+      "Precision": 0.958904109589041,
+      "Recall": 0.9722222222222222,
+      "F1": 0.9655172413793104,
+      "MCC": 0.9054466190452621,
+      "ConfusionMatrix": [
+        [
+          39,
+          3
+        ],
+        [
+          2,
+          70
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       0.95      0.93      0.94        42\n           1       0.96      0.97      0.97        72\n\n    accuracy                           0.96       114\n   macro avg       0.96      0.95      0.95       114\nweighted avg       0.96      0.96      0.96       114\n"
+    },
+    "XGBoost (Ensemble)": {
+      "Accuracy": 0.9649122807017544,
+      "AUC": 0.996031746031746,
+      "Precision": 0.9473684210526315,
+      "Recall": 1.0,
+      "F1": 0.972972972972973,
+      "MCC": 0.9258200997725514,
+      "ConfusionMatrix": [
+        [
+          38,
+          4
+        ],
+        [
+          0,
+          72
+        ]
+      ],
+      "ClassificationReport": "              precision    recall  f1-score   support\n\n           0       1.00      0.90      0.95        42\n           1       0.95      1.00      0.97        72\n\n    accuracy                           0.96       114\n   macro avg       0.97      0.95      0.96       114\nweighted avg       0.97      0.96      0.96       114\n"
+    }
+  }
+}

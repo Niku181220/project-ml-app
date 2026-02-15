@@ -1,0 +1,11 @@
+{
+  "task_type": "binary",
+  "labels": [
+    0,
+    1
+  ],
+  "label_map": {
+    "0": "M",
+    "1": "B"
+  }
+}
