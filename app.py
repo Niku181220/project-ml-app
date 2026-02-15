@@ -25,7 +25,11 @@ def load_summary():
 
 @st.cache_resource
 def load_model(model_file: str):
-    return load(model_file)
+    try:
+        return load(model_file)
+    except Exception as e:
+        st.error(f"Model failed to load: {e}")
+        st.stop()
 
 
 def plot_confusion_matrix(cm, class_names):
