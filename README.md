@@ -1,4 +1,5 @@
 ## **Machine Learning Classification Models – Streamlit Deployment**
+
 **a. Problem Statement**
 
 This project aims to build, evaluate, and deploy multiple Machine Learning classification models using a single dataset.
@@ -129,7 +130,7 @@ A screenshot of the environment is included in the final PDF submission.
 
 ▶ How to Run the Project
 1. Install Dependencies
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 2. Convert Dataset
 python convert_wdbc_to_csv.py
