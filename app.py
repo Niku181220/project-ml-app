@@ -9,11 +9,18 @@ import matplotlib.pyplot as plt
 from joblib import load
 from sklearn.metrics import confusion_matrix, classification_report
 
-ARTIFACT_DIR = os.path.join("model", "artifacts")
+
+def to_dense_if_sparse(X):
+    try:
+        return X.toarray()
+    except Exception:
+        return X
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ARTIFACT_DIR = os.path.join(BASE_DIR, "model", "artifacts")
 SUMMARY_PATH = os.path.join(ARTIFACT_DIR, "metrics_summary.json")
 
 st.set_page_config(page_title="ML Assignment 2 - Classification Models", layout="wide")
-
 
 @st.cache_data
 def load_summary():
